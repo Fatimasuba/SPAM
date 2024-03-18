@@ -60,7 +60,7 @@ if __name__ == "__main__":
     while True:
         try:
             reenviar_mensajes(client)
-            print("Esperar 10 minutos para reenviar mensajes nuevamente.")
+            print("Esperar 15 minutos para reenviar mensajes nuevamente.")
             sleep(900)  # Esperar 15 minutos (900 segundos) antes de volver a reenviar mensajes
         except Exception as ex:
             print(f"Error general: {ex}")
