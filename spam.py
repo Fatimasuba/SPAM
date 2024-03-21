@@ -61,6 +61,6 @@ if __name__ == "__main__":
         try:
             reenviar_mensajes(client)
             print("Esperar 15 minutos para reenviar mensajes nuevamente.")
-            sleep(900)  # Esperar 15 minutos (900 segundos) antes de volver a reenviar mensajes
+            await asyncio.sleep(900)  # Esperar 15 minutos (900 segundos) antes de volver a reenviar mensajes
         except Exception as ex:
             print(f"Error general: {ex}")
